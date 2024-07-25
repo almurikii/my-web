@@ -1,0 +1,100 @@
+body {
+    background-image: url('./angel.png'); /* Your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: repeat; /* Repeat the image if necessary */
+    animation: pan 30s linear infinite; /* Apply the panning effect */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes pan {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+h1 {
+    color: rgb(51, 51, 0);
+    background-color: beige;
+    padding: 10px;
+    display: inline-block;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.center {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.dish-container {
+    text-align: center;
+}
+
+h3 {
+    color: rgb(56, 69, 255);
+}
+
+h2 {
+    color: rgb(158, 110, 48);
+}
+
+p {
+    color: olive;
+}
+
+.dish-container h2 {
+    color: #ffffff;
+    background-color: rgb(255, 218, 163);
+    padding: 5px;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dish-container p {
+    color: olive;
+    background-color: rgb(255, 218, 163);
+    padding: 5px;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dish-container h3 {
+    color: #c0543c;
+    background-color: rgb(255, 218, 163);
+    padding: 5px;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    width: 500px;
+    background-color: #ffc272;
+    text-align: center;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly increase the size */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+}
+
+#dish-name {
+    color: #f06c2c;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #ffaf6d;
+    margin: 50px auto;
+    width: 80%;
+}
